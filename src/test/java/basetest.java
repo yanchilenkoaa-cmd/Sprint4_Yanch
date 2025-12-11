@@ -23,8 +23,10 @@ public class basetest {
         String browser = System.getProperty("browser", "chrome");
         if (browser.equals("chrome")) {
             startBrowserChrome();
+            driver.manage().window().maximize(); //полноэкранный режим
         } else if (browser.equals("firefox")) {
             startBrowserFirefox();
+            driver.manage().window().maximize(); //полноэкранный режим
         }
         //создаем экземпляр каждой страницы( позволяет работать с элементами и методами страниц)
         mainPage = new mainpage(driver);
