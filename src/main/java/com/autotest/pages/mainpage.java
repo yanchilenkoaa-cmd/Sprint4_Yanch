@@ -1,4 +1,4 @@
-package Pages;
+package com.autotest.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 
-public class MainPage {
+public class mainpage {
     private WebDriver driver;
     private static final String BASE_URL = "https://qa-scooter.praktikum-services.ru/";
     //локаторы
@@ -24,7 +24,7 @@ public class MainPage {
     private By orderButtonBottom = By.xpath("(//button[text()='Заказать'])[2]");
 
 
-    public MainPage(WebDriver driver) {
+    public mainpage(WebDriver driver) {
         this.driver = driver;
     }
     //методы

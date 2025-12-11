@@ -1,4 +1,4 @@
-package Pages;
+package com.autotest.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class UserDetailsPage {
+public class userdetailspage {
     private WebDriver driver;
     //локаторы
     //ищем поле Имя
@@ -24,7 +24,7 @@ public class UserDetailsPage {
     private By nextButton = By.xpath(".//button[@class='Button_Button__ra12g Button_Middle__1CSJM']");
 
     //конструктор
-    public UserDetailsPage(WebDriver driver) {
+    public userdetailspage(WebDriver driver) {
         this.driver = driver;
     }
     //методы

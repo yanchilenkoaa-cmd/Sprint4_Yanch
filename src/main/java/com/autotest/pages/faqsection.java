@@ -1,4 +1,4 @@
-package Pages;
+package com.autotest.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 
-public class FAQSection {
+public class faqsection {
     private WebDriver driver;
     //локаторы
     //ищем текст Вопросы о важном
@@ -21,7 +21,7 @@ public class FAQSection {
     private By answers = By.className("accordion__panel");
 
     //конструктор класса
-    public FAQSection(WebDriver driver) {
+    public faqsection(WebDriver driver) {
         this.driver = driver;
     }
     //методы

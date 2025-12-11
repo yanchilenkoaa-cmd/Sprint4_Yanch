@@ -1,4 +1,4 @@
-package Pages;
+package com.autotest.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class RentalFormPage {
+public class rentalformpage {
     private WebDriver driver;
     //локаторы
     //ищем поле с датой
@@ -35,7 +35,7 @@ public class RentalFormPage {
     }
 
     //конструктор
-    public RentalFormPage(WebDriver driver) {
+    public rentalformpage(WebDriver driver) {
         this.driver = driver;
     }
 

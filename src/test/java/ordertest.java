@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
 @RunWith(Parameterized.class)
-public class OrderTest extends BaseTest {
+public class ordertest extends basetest {
     private final String name;
     private final String secondName;
     private final String address;
@@ -18,7 +18,7 @@ public class OrderTest extends BaseTest {
     private final String comment;
     private final String buttonType;
 
-    public OrderTest(String name, String secondName, String address,
+    public ordertest(String name, String secondName, String address,
                      String stationShort, String stationFull, String phone,
                      String day, String period, String comment, String buttonType) {
 
