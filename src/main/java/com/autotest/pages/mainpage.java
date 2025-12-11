@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 
-public class mainpage {
+public class MainPage {
     private WebDriver driver;
     private static final String BASE_URL = "https://qa-scooter.praktikum-services.ru/";
     //локаторы
@@ -24,7 +24,7 @@ public class mainpage {
     private By orderButtonBottom = By.xpath("(//button[text()='Заказать'])[2]");
 
 
-    public mainpage(WebDriver driver) {
+    public MainPage(WebDriver driver) {
         this.driver = driver;
     }
     //методы

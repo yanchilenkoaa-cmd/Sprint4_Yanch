@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
 @RunWith(Parameterized.class)
-public class ordertest extends basetest {
+public class ordertest extends BaseTest {
     private final String name;
     private final String secondName;
     private final String address;

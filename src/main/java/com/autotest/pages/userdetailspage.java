@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class userdetailspage {
+public class UserDetailsPage {
     private WebDriver driver;
     //локаторы
     //ищем поле Имя
@@ -24,7 +24,7 @@ public class userdetailspage {
     private By nextButton = By.xpath(".//button[@class='Button_Button__ra12g Button_Middle__1CSJM']");
 
     //конструктор
-    public userdetailspage(WebDriver driver) {
+    public UserDetailsPages(WebDriver driver) {
         this.driver = driver;
     }
     //методы

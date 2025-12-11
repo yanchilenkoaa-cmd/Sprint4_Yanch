@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 
-public class faqsection {
+public class FaqSection {
     private WebDriver driver;
     //локаторы
     //ищем текст Вопросы о важном

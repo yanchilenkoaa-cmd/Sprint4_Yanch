@@ -1,21 +1,21 @@
-import com.autotest.pages.rentalformpage;
-import com.autotest.pages.userdetailspage;
+import com.autotest.pages.RentalFormPage;
+import com.autotest.pages.UserDetailsPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import com.autotest.pages.mainpage;
-import com.autotest.pages.faqsection;
+import com.autotest.pages.MainPage;
+import com.autotest.pages.FaqSection;
 
-public class basetest {
+public class BaseTest {
     // Открыть браузер
     WebDriver driver;
-    mainpage mainPage;
-    userdetailspage userInformationPage;
-    rentalformpage rentalDataPages;
-    faqsection faqSection;
+    MainPage mainPage;
+    UserDetailsPage userInformationPage;
+    RentalFormPage rentalDataPages;
+    FaqSection faqSection;
 
     @Before
     //для запуска выбранного браузера (по умолчанию это Хром)
@@ -29,10 +29,10 @@ public class basetest {
             driver.manage().window().maximize(); //полноэкранный режим
         }
         //создаем экземпляр каждой страницы( позволяет работать с элементами и методами страниц)
-        mainPage = new mainpage(driver);
-        userInformationPage = new userdetailspage(driver);
-        rentalDataPages = new rentalformpage(driver);
-        faqSection = new faqsection(driver);
+        mainPage = new MainPage(driver);
+        userInformationPage = new UserDetailsPage(driver);
+        rentalDataPages = new RentalFormPage(driver);
+        faqSection = new FaqSection(driver);
     }
     //методы запуска браузеров
     public void startBrowserFirefox() {

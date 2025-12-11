@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class rentalformpage {
+public class RentalFormPage {
     private WebDriver driver;
     //локаторы
     //ищем поле с датой
@@ -35,7 +35,7 @@ public class rentalformpage {
     }
 
     //конструктор
-    public rentalformpage(WebDriver driver) {
+    public RentalFormPage(WebDriver driver) {
         this.driver = driver;
     }
 

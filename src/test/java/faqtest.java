@@ -7,11 +7,11 @@ import org.junit.runners.Parameterized;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class faqtest extends basetest {
+public class FaqTest extends BaseTest {
     private final int questionIndex;
     private final String expectedAnswer;
 
-    public faqtest(int questionIndex, String expectedAnswer) {
+    public FaqTest(int questionIndex, String expectedAnswer) {
         this.questionIndex = questionIndex;
         this.expectedAnswer = expectedAnswer;
     }
